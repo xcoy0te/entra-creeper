@@ -1,0 +1,7 @@
+proxies.txt
+valid.txt
+results.json
+results.csv
+__pycache__/
+*.pyc
+.venv/
