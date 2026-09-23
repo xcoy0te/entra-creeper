@@ -6,6 +6,12 @@ A modernized, **dependency-free** successor to [LMGsec/o365creeper](https://gith
 
 It confirms whether an email address maps to a real Microsoft account by inspecting the **unauthenticated** `GetCredentialType` response. It **never submits a password**, so it does not create sign-in log entries or trip Smart Lockout.
 
+## Demo
+
+![entra-creeper validating a list of addresses — valid, invalid, and throttled results with a summary](docs/demo.svg)
+
+*Note: `guest_ext@` is reported valid via `exists-other-idp` (IfExistsResult 5), which the original o365creeper misses, and the throttled address is held as `unknown` rather than guessed.*
+
 ---
 
 ## Why this over the original?
